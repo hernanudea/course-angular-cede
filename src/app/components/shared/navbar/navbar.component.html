@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <button mat-button [routerLink]="['/']">Inicio</button>
+
+  <button mat-button [matMenuTriggerFor]='archivo'>Archivo</button>
+  <button mat-button [matMenuTriggerFor]='edicion'>Edición</button>
+  <button mat-button [matMenuTriggerFor]='ver'>Ver</button>
+
+  <mat-menu #archivo="matMenu">
+    <button mat-menu-item [routerLink]="['/clientes']">Clientes</button>
+    <button mat-menu-item [routerLink]="['/productos']">Productos</button>
+  </mat-menu>
+
+  <mat-menu #edicion="matMenu">
+    <button mat-menu-item [routerLink]="['/clientes']">Clientes</button>
+    <button mat-menu-item [routerLink]="['/productos']">Productos</button>
+  </mat-menu>
+
+  <mat-menu #ver="matMenu">
+    <button mat-menu-item [routerLink]="['/clientes']">Clientes</button>
+    <button mat-menu-item [routerLink]="['/productos']">Productos</button>
+  </mat-menu>
+
+</mat-toolbar>
